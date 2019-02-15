@@ -47,7 +47,7 @@ either expressed or implied, of the Regents of The University of Michigan.
 #include "tagStandard41h12.h"
 #include "tagStandard52h13.h"
 
-#include "common/getopt.h"
+#include "utils/getopt.h"
 #include "common/image_u8.h"
 #include "common/image_u8x4.h"
 #include "common/pjpeg.h"
