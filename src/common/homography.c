@@ -30,7 +30,7 @@ either expressed or implied, of the Regents of The University of Michigan.
 
 #include "common/matd.h"
 #include "common/zarray.h"
-#include "common/homography.h"
+#include "homography.h"
 #include "common/math_util.h"
 
 // correspondences is a list of float[4]s, consisting of the points x

@@ -34,7 +34,7 @@ either expressed or implied, of the Regents of The University of Michigan.
 #include <float.h>
 
 #include "common/math_util.h"
-#include "common/svd22.h"
+#include "svd22.h"
 #include "common/matd.h"
 
 // a matd_t with rows=0 cols=0 is a SCALAR.

@@ -22,7 +22,7 @@ file(GLOB APRILTAG_SOURCES src/*.c src/common/*.c)
 add_library(apriltags SHARED ${APRILTAG_SOURCES})
 target_include_directories(apriltags PUBLIC include/apriltags)
 target_include_directories(apriltags PRIVATE include/apriltags/common)
-target_include_directories(apriltags PRIVATE src)
+#target_include_directories(apriltags PRIVATE src)
 target_link_libraries(apriltags m pthread)
 set_target_properties(apriltags PROPERTIES
   VERSION ${PROJECT_VERSION} # creates a library file named libX.so.MAJOR.MINOR.PATCH and a symlink named libX.so to it
@@ -34,7 +34,7 @@ set_target_properties(apriltags PROPERTIES
 add_library(apriltags_static STATIC ${APRILTAG_SOURCES})
 target_include_directories(apriltags_static PUBLIC include/apriltags) # requires 2.8.10 < cmake version
 target_include_directories(apriltags_static PRIVATE include/apriltags/common)
-target_include_directories(apriltags_static PRIVATE src)
+#target_include_directories(apriltags_static PRIVATE src)
 target_link_libraries(apriltags_static m pthread)
 set_target_properties(apriltags_static PROPERTIES OUTPUT_NAME apriltags)
 
